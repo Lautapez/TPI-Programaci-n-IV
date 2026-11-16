@@ -23,6 +23,7 @@ Aplicación web de pedidos de comida · TPI Programación 4 · UTN (Tecnicatura 
 | Base de datos | SQLite (incluida con Python) **o** PostgreSQL 15+ | — |
 
 > En Windows, si `python` no responde, probá `py -3.12` en su lugar.
+
 > **Windows:** clonar o descomprimir el proyecto en una ruta **corta** (por ejemplo `C:\proyectos\food-store`), fuera de OneDrive y de carpetas anidadas. Con rutas de más de ~260 caracteres, `pnpm build` y `pnpm dev` fallan con `ERR_PACKAGE_IMPORT_NOT_DEFINED: #module-sync-enabled`.
 
 Son **dos proyectos independientes**: el backend corre en el puerto **8000** y el frontend en el **5173**.
