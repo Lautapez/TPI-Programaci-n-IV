@@ -7,9 +7,9 @@ Aplicación web de pedidos de comida · TPI Programación 4 · UTN (Tecnicatura 
 
 | | |
 |---|---|
-| **Repositorio** | `<COMPLETAR: URL pública de GitHub>` |
+| **Repositorio** | `https://github.com/Lautapez/TPI-Programaci-n-IV` |
 | **Video de demostración** | `<COMPLETAR: link público del video>` |
-| **Autor** | `<COMPLETAR: nombre y legajo>` |
+| **Autor** | `Lautaro Pez Argonz, Legajo 611616` |
 
 ---
 
