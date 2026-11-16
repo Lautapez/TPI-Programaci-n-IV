@@ -23,6 +23,7 @@ Aplicación web de pedidos de comida · TPI Programación 4 · UTN (Tecnicatura 
 | Base de datos | SQLite (incluida con Python) **o** PostgreSQL 15+ | — |
 
 > En Windows, si `python` no responde, probá `py -3.12` en su lugar.
+> **Windows:** clonar o descomprimir el proyecto en una ruta **corta** (por ejemplo `C:\proyectos\food-store`), fuera de OneDrive y de carpetas anidadas. Con rutas de más de ~260 caracteres, `pnpm build` y `pnpm dev` fallan con `ERR_PACKAGE_IMPORT_NOT_DEFINED: #module-sync-enabled`.
 
 Son **dos proyectos independientes**: el backend corre en el puerto **8000** y el frontend en el **5173**.
 Hay que dejar **dos terminales abiertas** (una por proyecto).
@@ -220,3 +221,4 @@ food-store/
 | El front carga pero no hay datos / error de red | El backend no está corriendo, o `VITE_API_URL` es incorrecta, o se abrió el front con `127.0.0.1` en lugar de `localhost`. |
 | Después de cambiar `.env` del front no hay efecto | Reiniciar `pnpm dev` (Vite lee las variables al arrancar). |
 | Seed ya ejecutado y quiero empezar de cero | Con SQLite: borrar `backend/foodstore.db` y volver a ejecutar el seed. |
+| `ERR_PACKAGE_IMPORT_NOT_DEFINED ... #module-sync-enabled` al correr `pnpm build` o `pnpm dev` | La ruta del proyecto es demasiado larga para Windows. Mover el proyecto a una ruta corta (`C:\proyectos\food-store`), borrar `frontend/node_modules` y volver a ejecutar `pnpm install`. |
